@@ -9,10 +9,10 @@ vim.keymap.set("n", "<C-l>", "<C-w>l", { desc = "Move to right split" })
 vim.keymap.set("n", "<C-j>", "<C-w>j", { desc = "Move to bottom split" })
 
 -- Resize splits
-vim.keymap.set("n", "<C-S-Up>", ":resize +2<CR>", { desc = "Increase height" })
-vim.keymap.set("n", "<C-S-Down>", ":resize -2<CR>", { desc = "Decrease height" })
-vim.keymap.set("n", "<C-S-Left>", ":vertical resize -2<CR>", { desc = "Decrease width" })
-vim.keymap.set("n", "<C-S-Right>", ":vertical resize +2<CR>", { desc = "Increase width" })
+vim.keymap.set("n", "<M-Up>", ":resize +2<CR>", { desc = "Increase height" })
+vim.keymap.set("n", "<M-Down>", ":resize -2<CR>", { desc = "Decrease height" })
+vim.keymap.set("n", "<M-Left>", ":vertical resize -2<CR>", { desc = "Decrease width" })
+vim.keymap.set("n", "<M-Right>", ":vertical resize +2<CR>", { desc = "Increase width" })
 
 -- Oil.nvim
 vim.keymap.set("n", "\\", "<CMD>Oil --float<CR>", { desc = "Open parent directory" })
