@@ -18,6 +18,7 @@ mason_lspconfig.setup({
 		"cssls",
 		"gopls",
 		"rust_analyzer",
+		"tinymist",
 	},
 })
 
@@ -65,6 +66,13 @@ local servers = {
 				diagnostics = { globals = { "vim" } },
 				workspace = { checkThirdParty = false },
 			},
+		},
+	},
+	tinymist = {
+		settings = {
+			formatterMode = "typstyle",
+			-- exportPdf = "onType",
+			semanticTokens = "disable",
 		},
 	},
 }
