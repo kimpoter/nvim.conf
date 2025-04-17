@@ -8,6 +8,7 @@ return {
 			json = { "prettier" },
 			html = { "prettier" },
 			css = { "prettier" },
+			svelte = { "prettier" },
 			markdown = { "prettier" },
 			go = { "goimports", "gofmt" }, -- You can change order of preference
 			rust = { "rustfmt" },
