@@ -29,19 +29,6 @@ if ok_cmp then
 	capabilities = cmp_nvim_lsp.default_capabilities(capabilities)
 end
 
--- Add border on the floating
-local border = "rounded"
-
-for _, handler in ipairs({ "hover", "signature_help" }) do
-	vim.lsp.handlers["textDocument/" .. handler] = vim.lsp.with(vim.lsp.handlers["textDocument/" .. handler], {
-		border = border,
-	})
-end
-
-vim.diagnostic.config({
-	float = { border = border },
-})
-
 -- on_attach function for keymaps
 local on_attach = function(_, bufnr)
 	local map = function(mode, lhs, rhs, desc)
