@@ -210,6 +210,8 @@ return {
 		local servers = {
 			bashls = {},
 			ts_ls = {},
+			svelte = {},
+			tailwindcss = {},
 			-- clangd = {},
 			-- gopls = {},
 			-- pyright = {},
