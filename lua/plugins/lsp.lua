@@ -212,6 +212,8 @@ return {
 			ts_ls = {},
 			svelte = {},
 			tailwindcss = {},
+			solidity_ls = {},
+			solidity_ls_nomicfoundation = {},
 			-- clangd = {},
 			-- gopls = {},
 			-- pyright = {},
