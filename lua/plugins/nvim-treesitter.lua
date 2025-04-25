@@ -20,6 +20,7 @@ return {
 				"html",
 				"css",
 				"typescript",
+				"json",
 			},
 			sync_install = false,
 			highlight = { enable = true },
