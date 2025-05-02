@@ -268,7 +268,7 @@ return {
 			iota_move = {
 				cmd = { "C:/Users/sozy/.cargo/bin/move-analyzer.exe" },
 				filetypes = { ".move" },
-				root_dir = require("lspconfig").util.root_pattern("Cargo.toml", ".git"),
+				root_dir = require("lspconfig").util.root_pattern("Move.toml", ".git"),
 			},
 		})
 
