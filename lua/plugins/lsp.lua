@@ -264,6 +264,13 @@ return {
 			"eslint_d",
 		})
 		require("mason-tool-installer").setup({ ensure_installed = ensure_installed })
+		vim.list_extend(servers, {
+			iota_move = {
+				cmd = { "C:/Users/sozy/.cargo/bin/move-analyzer.exe" },
+				filetypes = { ".move" },
+				root_dir = require("lspconfig").util.root_pattern("Cargo.toml", ".git"),
+			},
+		})
 
 		require("mason-lspconfig").setup({
 			ensure_installed = {}, -- explicitly set to an empty table (Kickstart populates installs via mason-tool-installer)
